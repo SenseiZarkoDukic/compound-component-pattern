@@ -1,4 +1,4 @@
-import { createContext, useState } from "react";
+import { createContext, useContext, useState } from "react";
 
 // 1. Create a context
 const CounterContext = createContext();
