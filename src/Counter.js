@@ -18,5 +18,24 @@ function Counter({ children }) {
 
 // 3. Create child components to help implementing the common task
 
+function Count() {
+  const { count } = useContext(CounterContext);
+  return <span>{count}</span>;
+}
+
+function Increase({ icon }) {
+  const { increase } = useContext(CounterContext);
+  return <button onClick={increase}>{icon}</button>;
+}
+
+function Decrease({ icon }) {
+  const { decrease } = useContext(CounterContext);
+  return <button onClick={decrease}>{icon}</button>;
+}
+
+function Label({ children }) {
+  return <span>{children}</span>;
+}
+
 // 4. Add child components as properties to the parent component
 export default Counter;
