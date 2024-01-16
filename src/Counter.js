@@ -1,5 +1,7 @@
 import { useState } from "react";
 
+const CounterContext = createContext();
+
 function Counter() {
   const [count, setCount] = useState(0);
   const increase = () => setCount((c) => c + 1);
