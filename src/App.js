@@ -15,11 +15,19 @@ export default function App() {
       /> */}
 
       <Counter>
-        <Counter.Decrease icon="-" />
-        <Counter.Count />
-        <Counter.Increase icon="+" />
         <Counter.Label>My super flexible counter</Counter.Label>
+        <Counter.Decrease icon="-" />
+        <Counter.Increase icon="+" />
+        <Counter.Count />
       </Counter>
+      <div>
+        <Counter>
+          <Counter.Label>My super flexible counter</Counter.Label>
+          <Counter.Decrease icon="-" />
+          <Counter.Increase icon="+" />
+          <Counter.Count />
+        </Counter>
+      </div>
     </div>
   );
 }
