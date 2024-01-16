@@ -22,10 +22,11 @@ export default function App() {
       </Counter>
       <div>
         <Counter>
-          <Counter.Label>My super flexible counter</Counter.Label>
-          <Counter.Decrease icon="-" />
-          <Counter.Increase icon="+" />
-          <Counter.Count />
+          <Counter.Decrease icon="◀️" />
+          <div>
+            <Counter.Count />
+          </div>
+          <Counter.Increase icon="▶️" />
         </Counter>
       </div>
     </div>
