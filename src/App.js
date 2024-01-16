@@ -13,6 +13,13 @@ export default function App() {
         hideIncrease={false}
         hideDecrease={false}
       />
+
+      <Counter>
+        <Counter.Decrease icon="-" />
+        <Counter.Count />
+        <Counter.Increase icon="+" />
+        <Counter.Label>My super flexible counter</Counter.Label>
+      </Counter>
     </div>
   );
 }
