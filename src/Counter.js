@@ -38,4 +38,10 @@ function Label({ children }) {
 }
 
 // 4. Add child components as properties to the parent component
+
+Counter.Count = Count;
+Counter.Increase = Increase;
+Counter.Decrease = Decrease;
+Counter.Label = Label;
+
 export default Counter;
